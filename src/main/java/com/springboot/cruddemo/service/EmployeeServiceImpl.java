@@ -22,7 +22,7 @@ public class EmployeeServiceImpl implements EmployeeService{
 	 * to solve that we use @Qualifier and give it the bean we wanna use
 	 */
 	@Autowired
-	public EmployeeServiceImpl(@Qualifier("EmployeeDAOJpaImpl")EmployeeDAO theEmployeeDAO) {
+	public EmployeeServiceImpl(@Qualifier("employeeDAOJpaImpl")EmployeeDAO theEmployeeDAO) {
 		employeeDAO = theEmployeeDAO;
 	}
 

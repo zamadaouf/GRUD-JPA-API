@@ -22,9 +22,9 @@ public class EmployeeRestController {
 	
 	private EmployeeService employeeService;
 	
-	// quick and dirty: inject employee dao (use constructor injection
+	// quick and dirty: inject employee dao (use constructor injection)
 	@Autowired
-	public EmployeeRestController(@Qualifier("employeeServiceImpl")EmployeeService theEmployeeService) {
+	public EmployeeRestController(EmployeeService theEmployeeService) {
 		employeeService = theEmployeeService;
 	}
 	
